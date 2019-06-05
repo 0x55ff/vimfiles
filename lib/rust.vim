@@ -1,17 +1,17 @@
 let g:rustfmt_autosave = 1
 
 let mapleader = ','
-nmap <leader>i :Cinit<CR>
-nmap <leader>b :Cbuild<CR>
-nmap <leader>h :Cbench<CR>
-nmap <leader>r :Crun<CR>
-nmap <leader>c :Cclean<CR>
-nmap <leader>t :Ctest<CR>
-nmap <leader>u :Cupdate<CR>
-nmap <leader>s :Csearch<CR>
-nmap <leader>p :Cpublish<CR>
-nmap <leader>f :RustFmt<CR>
-nmap gd :LspDefinition<CR>
+nmap <leader>i :Cinit<cr>
+nmap <leader>b :Cbuild<cr>
+nmap <leader>h :Cbench<cr>
+nmap <leader>r :Crun<space>--color<space>always<space>2>&1\|more<cr>
+nmap <leader>c :Cclean<cr>
+nmap <leader>t :Ctest<cr>
+nmap <leader>u :Cupdate<cr>
+nmap <leader>s :Csearch<cr>
+nmap <leader>p :Cpublish<cr>
+nmap <leader>f :RustFmt<cr>
+nmap gd :LspDefinition<cr>
 
 if executable('rls')
         au User lsp_setup call lsp#register_server({
