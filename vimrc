@@ -11,6 +11,7 @@ source ~/.vim/lib/nerdtree.vim
 
 " language related stuff
 source ~/.vim/lib/rust.vim
+source ~/.vim/lib/rls.vim
 
 " some after setting
 source ~/.vim/lib/after.vim

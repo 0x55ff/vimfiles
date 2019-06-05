@@ -1,13 +1,13 @@
-function Do(action) 
-    if &filetype == 'rust'
-        let compiler = 'cargo'
-    elseif &filetype == 'go'
-        let compiler = 'go'
-    endif
-    exec printf(":!%s %s\n", compiler, a:action)
-endfunction
+let g:rustfmt_autosave = 1
 
 let mapleader = ','
-nmap <leader>b :call Do("build")<CR>
-nmap <leader>r :call Do("run")<CR>
-nmap <leader>t :call Do("test")<CR>
+nmap <leader>i :Cinit<CR>
+nmap <leader>b :Cbuild<CR>
+nmap <leader>h :Cbench<CR>
+nmap <leader>r :Crun<CR>
+nmap <leader>c :Cclean<CR>
+nmap <leader>t :Ctest<CR>
+nmap <leader>u :Cupdate<CR>
+nmap <leader>s :Csearch<CR>
+nmap <leader>p :Cpublish<CR>
+nmap <leader>f :RustFmt<CR>
