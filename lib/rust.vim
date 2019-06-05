@@ -7,7 +7,7 @@ nmap <leader>h :Cbench<cr>
 nmap <leader>r :Crun<space>--color<space>always<space>2>&1\|more<cr>
 nmap <leader>c :Cclean<cr>
 nmap <leader>t :Ctest<cr>
-nmap <leader>u :Cupdate<cr>
+nmap <leader>u :!cargo update<cr>
 nmap <leader>s :Csearch<cr>
 nmap <leader>p :Cpublish<cr>
 nmap <leader>f :RustFmt<cr>
