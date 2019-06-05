@@ -1,6 +1,9 @@
 
 set nocompatible
 
+" show line number
+set number
+
 "turn on syntax highlighting
 syntax on
 
@@ -16,8 +19,6 @@ set showmode "show current mode down the bottom
 "store lots of :cmdline history
 set history=1000
 
-"display tabs and trailing spaces
-set list
 
 " search options
 set ignorecase
@@ -38,6 +39,7 @@ if v:version >= 703
     set undofile
     set colorcolumn=+1 "mark the ideal max text width
 endif
+
 
 set directory=~/.vim/swapfiles/
 
