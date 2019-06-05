@@ -22,9 +22,8 @@ if ! [  $script_dir  -ef ~/.vim ];then
         rm -rf ~/.vim.bkp
         mv -f ~/.vim ~/.vim.bkp
     fi
+    cp -rf $script_dir ~/.vim
 fi
-
-cp -rf $script_dir ~/.vim
 
 
 if [ -f "~/.vimrc" ];then
@@ -32,4 +31,6 @@ if [ -f "~/.vimrc" ];then
 fi
 
 echo "source ~/.vim/vimrc" > ~/.vimrc
+
+vim +PlugInstall +qall
 
