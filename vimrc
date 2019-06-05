@@ -8,10 +8,10 @@ source ~/.vim/lib/vimplug.vim
 source ~/.vim/lib/color.vim
 source ~/.vim/lib/airline.vim
 source ~/.vim/lib/nerdtree.vim
+source ~/.vim/lib/asyncomplete.vim
 
 " language related stuff
 source ~/.vim/lib/rust.vim
-source ~/.vim/lib/rls.vim
 
 " some after setting
 source ~/.vim/lib/after.vim

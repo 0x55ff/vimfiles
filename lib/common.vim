@@ -4,8 +4,18 @@ set nocompatible
 " show line number
 set number
 
-"turn on syntax highlighting
+" enable syntax highlighting
 syntax on
+
+" enable command-line completion
+set wildmenu
+
+" display command-line completion on menu
+set completeopt=menu,menuone
+
+" popup menu max number of lines
+set pumheight=16
+
 
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
