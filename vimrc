@@ -5,3 +5,4 @@ source ~/.vim/lib/statusline.vim
 source ~/.vim/lib/vimplug.vim
 
 source ~/.vim/lib/color.vim
+source ~/.vim/lib/rust.vim
