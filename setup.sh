@@ -41,3 +41,12 @@ echo "source ~/.vim/vimrc" > ~/.vimrc
 
 vim +PlugInstall +qall
 
+# rust stuff
+command -v rustup 1>/dev/null
+if [ $? -eq 0 ];then
+    rustup component add rls rust-analysis rust-src rustfmt
+else
+    echo "Error: you should install rustup to get rls rust-analysis"
+fi
+
+
