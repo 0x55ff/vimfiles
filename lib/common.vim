@@ -24,7 +24,7 @@ set backspace=indent,eol,start
 set hidden
 
 set showcmd "show incomplete cmds down the bottom
-set showmode "show current mode down the bottom
+" set showmode "show current mode down the bottom
 
 "store lots of :cmdline history
 set history=1000
@@ -52,3 +52,16 @@ endif
 
 
 set directory=~/.vim/swapfiles/
+
+" windows swtich
+nnoremap <C-J> <C-W>j<C-W>_
+nnoremap <C-K> <C-W>k<C-W>_
+nnoremap <C-H> <C-W>h<C-W>_
+nnoremap <C-L> <C-W>l<C-W>_
+nnoremap - <C-W>-
+nnoremap + <C-W>+
+set wmh=0
+set winheight=999
+
+" disable display file info on command line
+set shortmess+=F
